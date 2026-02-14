@@ -33,7 +33,7 @@ export default function RegisterPage() {
                     setLoading(true);
 
                     await axios.post(
-                        "http://localhost:3000/auth/register",
+                        "https://user-login-backend-7gy3.onrender.com/auth/register",
                         { email, password }
                     );
 

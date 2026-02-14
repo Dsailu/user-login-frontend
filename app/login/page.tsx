@@ -20,7 +20,7 @@ export default function LoginPage() {
       setError("");
 
       const res = await axios.post(
-        "http://localhost:3000/auth/login",
+        "https://user-login-backend-7gy3.onrender.com/auth/login",
         { email, password }
       );
 
