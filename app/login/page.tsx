@@ -20,7 +20,7 @@ export default function LoginPage() {
       setError("");
 
       const res = await axios.post(
-        "https://user-login-backend-7gy3.onrender.com/auth/login",
+       `${process.env.NEXT_PUBLIC_API_URL}/auth/login`,
         { email, password }
       );
 
